@@ -17,7 +17,7 @@ export default function QRGenerator() {
   
   const generateQRCode = async () => {
     try {
-      const response = await fetch("http://localhost:3000/generate-qrcode", {
+      const response = await fetch("https://qr-backend-generator.vercel.app/generate-qrcode", {
         method: 'POST',
         body: JSON.stringify({ text }),
         headers: {
